@@ -1,1 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Project Stars Ski Shop">
+    <meta name="description" content="Shop Fortnite items - Project Stars Ski">
+    <meta property="og:title" content="Project Stars Ski Shop" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://project-stars-ski.github.io/projectstarsski.github.io/shop" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="author" content="Your Name">
+    <title>Project Stars Ski - Shop</title>
+    <link rel="icon" href="favicon.ico">
+    <style>
+        /* General body and layout styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212; /* Dark theme */
+            color: #E0E0E0; /* Light gray text */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #FF6347;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        /* Container for the shop buttons */
+        .shop-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            justify-items: center;
+            padding: 20px;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        /* Individual button styling */
+        .shop-button {
+            width: 250px;
+            height: 400px;
+            background-color: #2a2a2a;
+            border-radius: 20px;
+            overflow: hidden; /* Hide overflow from images */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Image inside the button */
+        .shop-button img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s;
+            border-radius: 20px;
+        }
+
+        /* Hover effects */
+        .shop-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .shop-button:hover img {
+            opacity: 0.8;
+        }
+
+        /* Text overlay on hover */
+        .shop-button .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+            border-radius: 20px;
+        }
+
+        .shop-button:hover .overlay {
+            opacity: 1;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Project Stars Ski - Shop</h1>
+
+    <!-- Shop Buttons Container -->
+    <div class="shop-container">
+        <!-- Ghoul Trooper Button -->
+        <div class="shop-button">
+            <img src="https://raw.githubusercontent.com/Project-Stars-Ski/projectstarsski.github.io/main/assets/images/Ghoul_Trooper_29_-_Outfit_-_Fortnite.png" alt="Ghoul Trooper">
+            <div class="overlay">Ghoul Trooper</div>
+        </div>
+
+        <!-- Peely Bone Button -->
+        <div class="shop-button">
+            <img src="https://raw.githubusercontent.com/Project-Stars-Ski/projectstarsski.github.io/main/assets/images/Peely_Bone_29_-_Outfit_-_Fortnite.png" alt="Peely Bone">
+            <div class="overlay">Peely Bone</div>
+        </div>
+
+        <!-- Pump It Up Emote Button -->
+        <div class="shop-button">
+            <img src="https://raw.githubusercontent.com/Project-Stars-Ski/projectstarsski.github.io/main/assets/images/Pump_It_Up_29_-_Emote_-_Fortnite.png" alt="Pump It Up">
+            <div class="overlay">Pump It Up</div>
+        </div>
+
+        <!-- Skull Trooper Button -->
+        <div class="shop-button">
+            <img src="https://raw.githubusercontent.com/Project-Stars-Ski/projectstarsski.github.io/main/assets/images/Skull_Trooper_29_-_Outfit_-_Fortnite.png" alt="Skull Trooper">
+            <div class="overlay">Skull Trooper</div>
+        </div>
+
+        <!-- Zombified Emote Button -->
+        <div class="shop-button">
+            <img src="https://raw.githubusercontent.com/Project-Stars-Ski/projectstarsski.github.io/main/assets/images/Zombified_-_Emote_-_Fortnite.png" alt="Zombified Emote">
+            <div class="overlay">Zombified</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
