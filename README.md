@@ -1,2 +1,2 @@
-# projectstarsski.github.io
+# Project Stars Ski
 The website for Project Stars Ski
