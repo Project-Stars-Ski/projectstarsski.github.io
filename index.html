@@ -33,6 +33,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             height: 100vh;
             transition: background-color 0.3s, color 0.3s;
         }
@@ -70,13 +71,12 @@
             color: #B0B0B0; /* Faded gray text for the footer */
         }
 
-        /* Hover effect for container */
-        .container:hover {
-            background-color: #2a2a2a;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+        .work-in-progress {
+            font-size: 1rem;
+            color: #A0A0A0;
+            margin-top: 30px;
         }
 
-        /* Button style (optional) */
         .cta-button {
             background-color: #FF6347; /* Matching color from h1 */
             color: #fff;
@@ -91,6 +91,28 @@
         .cta-button:hover {
             background-color: #D85F3E; /* Slightly darker shade on hover */
         }
+
+        .shop-button {
+            background-color: #808080; /* Grey button */
+            color: white;
+            font-size: 1.2rem;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px; /* Rounded edges */
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .shop-button:hover {
+            background-color: #696969; /* Slightly darker gray on hover */
+        }
+
+        /* Hover effect for container */
+        .container:hover {
+            background-color: #2a2a2a;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+        }
     </style>
 </head>
 
@@ -103,6 +125,16 @@
             <p>Stay tuned for updates.</p>
         </div>
     </div>
+
+    <!-- Work in Progress message at the bottom -->
+    <div class="work-in-progress">
+        <p>Work in Progress - Site is not Complete</p>
+    </div>
+
+    <!-- Shop Button -->
+    <a href="https://project-stars-ski.github.io/projectstarsski.github.io/shop" target="_blank">
+        <button class="shop-button">Shop</button>
+    </a>
 </body>
 
 </html>
