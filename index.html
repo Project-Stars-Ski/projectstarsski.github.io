@@ -14,12 +14,12 @@
     <meta name="author" content="Your Name">
     <title>Welcome - Project Stars Ski</title>
     <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
     <style>
-        /* General styles */
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #121212; /* Dark background */
-            color: #E0E0E0; /* Light gray text for contrast */
+            background-color: #121212;
+            color: #E0E0E0;
             margin: 0;
             padding: 0;
             display: flex;
@@ -30,13 +30,29 @@
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-family: 'HeadingNow', sans-serif;
+            font-weight: bold;
+            font-size: 3rem;
             color: #FF6347;
-            margin-top: 20px;
+            margin-top: 40px;
             margin-bottom: 40px;
+            text-align: center;
+            transform: rotate(-3deg); /* Tilt the heading */
         }
 
-        /* Shop button positioned at top right */
+        .text-box {
+            background-color: #333;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+        }
+
+        .footer {
+            font-size: 1rem;
+            color: #B0B0B0;
+        }
+
         .shop-button {
             position: absolute;
             top: 20px;
@@ -52,23 +68,21 @@
         }
 
         .shop-button:hover {
-            background-color: #696969; /* Slightly darker gray on hover */
-        }
-
-        .footer {
-            font-size: 1rem;
-            color: #B0B0B0;
+            background-color: #696969;
         }
     </style>
 </head>
 
 <body>
-    <h1>Welcome to Project Stars Ski</h1>
+    <div class="text-box">
+        <h1>Welcome to Project Stars Ski</h1>
+        <p>Coming December!</p>
+    </div>
+
     <div class="footer">
         <p>Stay tuned for updates.</p>
     </div>
 
-    <!-- Shop Button (top right) -->
     <a href="https://project-stars-ski.github.io/projectstarsski.github.io/shop">
         <button class="shop-button">Shop</button>
     </a>
