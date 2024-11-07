@@ -18,40 +18,66 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: #121212; /* Dark background */
+            color: #E0E0E0; /* Light gray text for contrast */
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            transition: background-color 0.3s, color 0.3s;
         }
 
         .container {
             text-align: center;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 500px;
+            padding: 40px;
+            background-color: #1F1F1F; /* Darker background for container */
+            border-radius: 20px; /* Curved edges */
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+            max-width: 600px;
             width: 100%;
+            transition: background-color 0.3s;
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             font-weight: bold;
             margin-bottom: 20px;
+            color: #FF6347; /* Tomato color for a pop of contrast */
         }
 
         p {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             margin-bottom: 30px;
+            color: #D3D3D3; /* Lighter gray for regular text */
         }
 
         .footer {
-            font-size: 0.9rem;
-            color: #777;
+            font-size: 1rem;
+            color: #B0B0B0; /* Faded gray text for the footer */
+        }
+
+        /* Hover effect for container */
+        .container:hover {
+            background-color: #2a2a2a;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Button style (optional) */
+        .cta-button {
+            background-color: #FF6347; /* Matching color from h1 */
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px; /* Rounded button */
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #D85F3E; /* Slightly darker shade on hover */
         }
     </style>
 </head>
@@ -60,6 +86,7 @@
     <div class="container">
         <h1>Welcome to Project Stars Ski</h1>
         <p>Coming December!</p>
+        <button class="cta-button">Stay Tuned</button>
         <div class="footer">
             <p>Stay tuned for updates.</p>
         </div>
