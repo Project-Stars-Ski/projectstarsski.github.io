@@ -1,1 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Project Stars Ski Shop">
+    <meta name="description" content="Peely Bone - Project Stars Ski">
+    <meta property="og:title" content="Peely Bone - Project Stars Ski" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://project-stars-ski.github.io/projectstarsski.github.io/peelybone" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="author" content="Your Name">
+    <title>Peely Bone - Project Stars Ski</title>
+    <link rel="icon" href="favicon.ico">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-family: 'HeadingNow', sans-serif;
+            font-weight: bold;
+            font-size: 3rem;
+            color: #FF6347;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .peely-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            padding: 20px;
+            max-width: 1200px;
+            width: 100%;
+            border-radius: 20px;
+            background-color: #1a1a1a;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .video-container {
+            width: 50%;
+            max-width: 600px;
+            background-color: #2a2a2a;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+
+        .info-container {
+            width: 50%;
+            color: #E0E0E0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .info-container h2 {
+            font-size: 2.5rem;
+            color: #FF6347;
+            margin: 0;
+        }
+
+        .info-container p {
+            font-size: 1.2rem;
+            color: #E0E0E0;
+            margin: 0;
+        }
+
+        .info-container .highlight {
+            font-weight: bold;
+            color: #FF6347;
+        }
+
+        .home-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #808080;
+            color: white;
+            font-size: 1.2rem;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .home-button:hover {
+            background-color: #696969;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Peely Bone</h1>
+
+    <div class="peely-container">
+        <div class="video-container">
+            <video controls>
+                <source src="https://raw.githubusercontent.com/Project-Stars-Ski/projectstarsski.github.io/main/assets/videos/peelybone.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="info-container">
+            <h2>Peely Bone</h2>
+            <p>Epic Skin</p>
+            <p class="highlight">1,500 V-Bucks</p>
+            <p>This item is purchaseable on Project Stars Ski until <strong>December 5th, 2024</strong>.</p>
+        </div>
+    </div>
+
+    <a href="https://project-stars-ski.github.io/projectstarsski.github.io/">
+        <button class="home-button">Home</button>
+    </a>
+
+</body>
+
+</html>
